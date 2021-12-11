@@ -1,0 +1,11 @@
+.chart{
+  width: 50%;
+  height: 20%;
+}
+.countriesInfo{
+  height: 100vh;
+}
+.allButton{
+  z-index: 999;
+margin-top: 50vh;
+}
