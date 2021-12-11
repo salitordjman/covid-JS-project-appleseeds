@@ -1,0 +1,77 @@
+body{
+  max-width: 100vw;
+  max-width:100vh ;
+  background:lemonchiffon;
+}
+.start{
+  position:absolute;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  padding-top: calc(3vh + 3vw);
+  font-size: calc(3vh + 3vw);
+  background-color: rgb(243, 237, 243);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: calc(7vh + 7vw);
+  
+}
+.loader {
+  width: calc(13vh + 13vw);
+  height: calc(13vh + 13vw);
+  margin: 1rem;
+  border: calc(1.5vh + 1.5vw) solid rgb(230, 230, 230);
+  border-radius: 50%;
+  border-left-color: rgb(29, 197, 29);
+  animation: load 1.5s linear infinite;
+}
+@keyframes load {
+  to {
+    transform: rotate(360deg);
+  }
+}
+.container{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+}
+.chart{
+  width: 70%;
+  height: 100%;
+}
+button{
+  padding: calc(0.2vh + 0.2vw + 0.2rem);
+}
+.graphsBtn, .countriesBtn, .chart{
+  padding: calc(0.15vh + 0.15vw + 0.15rem); 
+  margin: calc(0.3vh + 0.3vw + 0.3rem); 
+}
+.graphsBtn{
+  visibility: hidden;
+}
+.countriesInfo{
+  padding-top: calc(1vh + 1vw);
+  width: 100%;
+  height: 85%;
+  position:absolute;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-wrap: wrap;
+  background:rgb(250, 241, 160);
+}
+h2{
+  border: 1px solid black;
+  margin: calc(0.5vh + 0.5vw);
+  padding: calc(0.5vh + 0.5vw);
+  color: crimson;
+}
+#myChart{
+  border-radius: 20px;
+  visibility: hidden;
+}
